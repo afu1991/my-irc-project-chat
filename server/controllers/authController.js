@@ -31,7 +31,7 @@ router.post('/login', function(req, res) {
         return res.json({ error: 'Votre login ou mot de passe n\'est pas correct', status:'error' });
       }
       var token = jwt.sign({ username: response.username }, "jwtSecret");
-      var otherPro = 'blibli';
+      //var otherPro = 'blibli';
       user = response[0];
       user.token = token;
       user.save(function (err) {
