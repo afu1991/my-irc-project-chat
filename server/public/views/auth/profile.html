@@ -1,0 +1,28 @@
+
+<div class="container">
+    <div class="card-panel">
+        <div class="row">
+            <form class="col s12 list list-inset" ng-submit="update()">
+
+                <div class="input-field col s8">
+                    <input placeholder="Login" id="first_name" type="text" class="validate" ng-model="profile.username" ng-value="user.username">
+                    <label class="active" for="first_name">Login</label>
+                </div>
+                <div class="input-field col s8">
+                    <input placeholder="Mot de passe" id="first_name" type="password" class="validate" ng-model="profile.password" ng-value="user.password" >
+                    <label class="active" for="first_name">Mot de passe</label>
+                </div>
+
+                <div class="input-field col s8">
+                    <input placeholder="Email" id="first_name" type="email" class="validate" ng-model="profile.email" ng-value="user.email" >
+                    <label class="active" for="first_name">Email</label>
+                </div>
+
+                <div class="input-field col s6">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Modifier
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
